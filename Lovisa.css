@@ -1,7 +1,7 @@
 /* Global */
 
 body:not(body.dark) {
-    background-color: #f3f0f7 !important;
+    background-color: #fff !important;
 }
 
 h1,
