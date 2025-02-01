@@ -47,23 +47,23 @@ body.index .store-header {
 
 /* Hero Section */
 
-.hero-section-0 .flex > div {
+[class*="hero-section"] .flex > div {
     max-width: 700px !important;
     margin-right: 5% !important;
     margin-left: auto !important;
     text-align: start !important;
 }
 
-.hero-section-0 h1,
-.hero-section-0 p {
+[class*="hero-section"] h1,
+[class*="hero-section"] p {
     color: #fff !important;
 }
 
-.hero-section-0 h1 {
+[class*="hero-section"] h1 {
     margin-top: 0 !important;
 }
 
-.hero-section-0 p {
+[class*="hero-section"] p {
     opacity: 1 !important;
     font-weight: 400 !important;
     line-height: 24px;
@@ -72,11 +72,11 @@ body.index .store-header {
 }
 
 @media (min-width: 1024px) {
-    .hero-section-0 h1 {
+    [class*="hero-section"] h1 {
         font-size: 52px !important;
     }
 
-    .hero-section-0 p {
+    [class*="hero-section"] p {
         font-size: 28px !important;
         line-height: 50px;
     }
@@ -86,19 +86,19 @@ body.index .store-header {
     .head_img {
         height: 40vh !important;
     }
-    .hero-section-0 .flex {
+    [class*="hero-section"] .flex {
         justify-content: center !important;
     }
-    .hero-section-0 .flex > div {
+    [class*="hero-section"] .flex > div {
         width: 300px;
         max-width: 320px !important;
     }
-    .hero-section-0 h1 {
+    [class*="hero-section"] h1 {
         font-size: 18px !important;
         line-height: 1.6 !important;
         margin-top: 2rem !important;
     }
-    .hero-section-0 p {
+    [class*="hero-section"] p {
         max-width: 90% !important;
     }
 }
