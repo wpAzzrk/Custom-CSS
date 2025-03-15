@@ -1,0 +1,263 @@
+/* start footer */
+.wave {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 16%;
+	background: url(https://iili.io/2mNmVKx.png);
+	background-size: 1000px 100px;
+
+}
+
+@media (min-width: 1024px) {
+	.wave {
+		top: -111px;
+		height: 20%;
+	}
+}
+
+
+.wave#wave1 {
+	z-index: 1;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+
+.wave#wave2 {
+	z-index: 1;
+	opacity: .5;
+	bottom: 0;
+	animation: animateWave_2 4s linear infinite;
+}
+
+.wave#wave3 {
+	z-index: 1;
+	opacity: .2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+
+.wave#wave4 {
+	z-index: 1;
+	opacity: .7;
+	bottom: 20px;
+	animation: animateWave_2 3s linear infinite;
+}
+
+@keyframes animateWave {
+	0% {
+		background-position-x: 1000px;
+	}
+
+	100% {
+		background-position-x: 0px;
+	}
+}
+
+@keyframes animateWave_2 {
+	0% {
+		background-position-x: 0px;
+	}
+
+	100% {
+		background-position-x: 1000px;
+	}
+}
+
+.store-footer {
+	background: linear-gradient(to top, var(--main-color), var(--main-color), var(--second-color)) !important;
+	margin-top: 115px;
+}
+
+.footer-is-light .store-footer .store-footer__inner {
+	background: linear-gradient(to top, var(--main-color), var(--second-color));
+	margin-top: -37px;
+	text-align: center;
+	border-style: inset;
+	position: relative;
+	z-index: 5;
+}
+
+@media (min-width: 1024px) {
+	.lg\:grid-cols-6 {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+.store-footer h3 {
+	font-family: "Almarai", sans-serif;
+	font-weight: 700;
+	text-align: center !important;
+	 !important;
+	 !important;
+	 !important;
+	padding: 1rem;
+	border-radius: 50px;
+	color: var(--main-color);
+	font-size: 1.4rem;
+	background: var(--third-color);
+}
+
+.store-footer h3:hover {
+	color: var(--second-color);
+	opacity: 1;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+a.flex.items-center.m-0 {
+	display: flex;
+	flex-direction: column;
+}
+
+.store-footer a h3:nth-child(1) {
+	font-size: 0rem;
+	color: transparent;
+	background-image: var(--logo);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	scale: 3.5;
+	line-height: 3;
+	background-position: center;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+	.store-footer a h3:nth-child(1) {
+		margin-top: 50px;
+	}
+}
+
+
+@media (min-width: 1024px) {
+	.footer-is-light .store-footer .store-footer__inner {
+	    margin-top: -42px;
+	}
+}
+
+
+salla-apps-icons,
+salla-apps-icons h3 {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.rtl\:lg\:pr-20:where([dir="rtl"], [dir="rtl"] *) {
+		padding-right: 5rem;
+		background: var(--main-color);
+		background-repeat: no-repeat;
+		background-size: contain;
+		scale: 0.7;
+		line-height: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+.footer-list {
+	color: var(--main-color);
+}
+
+.store-footer__inner .max-w-sm {
+	color: var(--main-color);
+}
+
+.s-contacts-list {
+	align-items: center !important;
+}
+
+.store-footer a {
+	color: var(--third-color);
+}
+
+.store-footer a:hover {
+	color: var(--second-color);
+	opacity: 1;
+	transform: scale(1.03);
+	transition: 0.4s;
+}
+
+.footer-is-light .store-footer {
+	--tw-bg-opacity: 1;
+	--tw-text-opacity: 1;
+	background: var(--main-color);
+	border-radius: 85px 85px 0 0;
+	color: var(--third-color);
+}
+
+@media (max-width: 1024px) {
+	.footer-is-light .store-footer {
+		padding-top: 17px;
+	}
+}
+
+.s-social-list {
+	display: flex;
+	gap: 0.625rem;
+	justify-content: center;
+}
+
+.lg\:col-span-2.rtl\:lg\:pl-20.ltr\:lg\:pr-20 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.s-menu-footer-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.s-contacts-list.s-contacts-list-vertical {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+span.unicode {
+	display: none;
+}
+
+.footer-is-light .store-footer .contact-social {
+	border: none;
+}
+
+.copyright-text p {
+	color: var(--third-color);
+}
+
+.store-footer::after {
+	content: "";
+	top: 0;
+	color: var(--third-color) !important;
+	font-size: 16px;
+	opacity: 0.8;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 700;
+	width: 100%;
+	display: inline-block;
+}
+
+/* end footer */
+
+
+
+/***************************js***************************/
+
+const footer = document.querySelector('.store-footer');
+const wavesContainer = document.createElement('div');
+wavesContainer.innerHTML = `
+  <div class="wave" id="wave1"></div>
+  <div class="wave" id="wave2"></div>
+  <div class="wave" id="wave3"></div>
+  <div class="wave" id="wave4"></div>
+`;
+wavesContainer.classList.add('waves');
+footer.insertBefore(wavesContainer, footer.firstChild);
+
