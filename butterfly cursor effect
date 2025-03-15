@@ -1,0 +1,27 @@
+document.addEventListener('mousemove', (e) => {
+    // إضافة شرط عشوائي لتقليل الكثافة
+    if (Math.random() > 0.5) return;  // 50% فرصة لظهور النجمة
+
+    const star = document.createElement('div');
+    star.style.position = 'absolute';
+    star.style.width = '20px';
+    star.style.height = '20px';
+    star.style.backgroundImage = 'url("https://i.ibb.co/5jgv9V6/aw.png")'; // استبدل بالصورة الخاصة بك
+    star.style.backgroundSize = 'contain';
+    star.style.pointerEvents = 'none';
+    star.style.left = (e.pageX + Math.random() * 30 - 15) + 'px'; // إزاحة النجمة عشوائياً قليلاً
+    star.style.top = (e.pageY + Math.random() * 30 - 15) + 'px';
+    star.style.opacity = 1;
+    star.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+    document.body.appendChild(star);
+
+    setTimeout(() => {
+        star.style.opacity = 0;
+        star.style.transform = 'scale(1.5)';
+    }, 10);
+
+    setTimeout(() => {
+        star.remove();
+    }, 1000);
+});
+
